@@ -689,3 +689,27 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-05 14:54:17.988
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-05-06 19:25:10.609 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -data /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32 -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-06 19:25:14.103
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-06 19:25:14.158
+!MESSAGE Log4j initialized with config file /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-06 19:25:16.698
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-05-06 19:26:05.557
+!MESSAGE Indexed 'lab7_0' (22 sources, 82 headers) in 2.15 sec: 4,730 declarations; 22,470 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0074%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-05-06 19:27:05.712
+!MESSAGE Indexed 'lab7_1' (22 sources, 82 headers) in 1.42 sec: 4,730 declarations; 22,470 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0074%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-05-06 19:28:18.844
+!MESSAGE Indexed 'lab7_2' (22 sources, 82 headers) in 1.2 sec: 4,730 declarations; 22,470 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0074%)
