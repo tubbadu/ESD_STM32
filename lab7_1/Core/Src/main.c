@@ -18,7 +18,7 @@ int main(void)
 
 	// button pin setup
 	volatile unsigned int *GPIOC_MODER = (unsigned int*) (0x40020800 + 0x00);
-	volatile unsigned int *GPIOC_IDR = (unsigned int*) (0x40020800 + 0x4);
+	volatile unsigned int *GPIOC_IDR = (unsigned int*) (0x40020800 + 0x10);
 
 	//CLOCK REGISTERS
 	volatile unsigned int *RCC_AHB1ENR = (unsigned int*) (0x40023800 + 0x30);
@@ -36,12 +36,12 @@ int main(void)
 	// Application code (Infinite loop)
 	while (1)
 	{
-		if(*GPIOC_IDR & 0x1000){
+		if(*GPIOC_IDR & 0x2000){
 			// turn on
-			*GPIOA_ODR = *GPIOA_ODR | 0x20;
+			*GPIOA_ODR = *GPIOA_ODR & ~0x20;
 		} else {
 			// turn off
-			*GPIOA_ODR = *GPIOA_ODR & ~0x20;
+			*GPIOA_ODR = *GPIOA_ODR | 0x20;
 		}
 		//*GPIOA_ODR = *GPIOA_ODR ^ 0x20; // XOR with 1, means "toggle" the bit
 	}
