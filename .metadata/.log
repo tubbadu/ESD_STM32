@@ -713,3 +713,21 @@ Command-line arguments:  -data /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32 -os 
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-05-06 19:28:18.844
 !MESSAGE Indexed 'lab7_2' (22 sources, 82 headers) in 1.2 sec: 4,730 declarations; 22,470 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0074%)
+!SESSION 2023-05-07 12:04:39.803 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-07 12:04:43.535
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-07 12:04:43.587
+!MESSAGE Log4j initialized with config file /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-07 12:04:47.810
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2023-05-07 13:14:00.551
+!MESSAGE Performing Marketplace install request from https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3274405
