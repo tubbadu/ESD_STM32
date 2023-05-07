@@ -35,7 +35,10 @@ extern "C" {
 #include "stm32f4xx_ll_utils.h"
 #include "stm32f4xx_ll_pwr.h"
 #include "stm32f4xx_ll_dma.h"
+<<<<<<< HEAD
 #include "stm32f4xx_ll_usart.h"
+=======
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 #include "stm32f4xx_ll_gpio.h"
 
 #if defined(USE_FULL_ASSERT)
@@ -70,14 +73,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+<<<<<<< HEAD
 #define B1_Pin LL_GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
+=======
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 #define USART_TX_Pin LL_GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin LL_GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
+<<<<<<< HEAD
 #define LD2_Pin LL_GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
+=======
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 #define TMS_Pin LL_GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin LL_GPIO_PIN_14

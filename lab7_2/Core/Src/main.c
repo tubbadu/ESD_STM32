@@ -50,7 +50,6 @@ volatile unsigned int *IDR = (unsigned int*) (0x10);
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -94,14 +93,18 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  // GPIOC_13 - pushbutton
-  LL_GPIO_WriteReg(GPIOC, GPIOC_MODER, LL_GPIO_ReadReg(GPIOC, GPIOC_MODER) & ~0x3000000); // forces '00' on [26:25] (six '0' -> 6*4=24, 7th digit selects [26:25])
+  //LL_GPIO_WriteReg(GPIOC, MODER, LL_GPIO_ReadReg(GPIOC, MODER) & ~0x3000000); // forces '00' on [26:25] (six '0' -> 6*4=24, 7th digit selects [26:25])
   // GPIOA_5  - led
+<<<<<<< HEAD
   LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x400); // forces 1 on [11]
   LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x800); // forces 0 on [12]
+=======
+ // LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x400); // forces 1 on [11]
+ // LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x800); // forces 0 on [12]
+
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 
   /* USER CODE END 2 */
 
@@ -109,8 +112,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+<<<<<<< HEAD
 	  int isPressed = LL_GPIO_ReadReg(GPIOC, IDR) & 0x2000; // select the 13th bit (the pushbutton
 	  if(isPressed){
+=======
+	  if(LL_GPIO_ReadReg(GPIOC, IDR) & 0x1000){ // select the 13th bit (the pushbutton
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 		  LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) | 0x10); // forces 1 on the 5th bit
 	  } else {
 		  LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) & ~0x10); // forces 0 on the 5th bit
@@ -130,6 +137,7 @@ void SystemClock_Config(void)
 {
   LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
   while(LL_FLASH_GetLatency()!= LL_FLASH_LATENCY_2)
+<<<<<<< HEAD
   {
   }
   LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE2);
@@ -163,19 +171,19 @@ void SystemClock_Config(void)
   LL_SetSystemCoreClock(84000000);
   LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
 }
+=======
+  {
+  }
+  LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE2);
+  LL_RCC_HSI_SetCalibTrimming(16);
+  LL_RCC_HSI_Enable();
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 
-/**
-  * @brief USART2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART2_UART_Init(void)
-{
+   /* Wait till HSI is ready */
+  while(LL_RCC_HSI_IsReady() != 1)
+  {
 
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
+<<<<<<< HEAD
   LL_USART_InitTypeDef USART_InitStruct = {0};
 
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -210,9 +218,30 @@ static void MX_USART2_UART_Init(void)
   LL_USART_ConfigAsyncMode(USART2);
   LL_USART_Enable(USART2);
   /* USER CODE BEGIN USART2_Init 2 */
+=======
+  }
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSI, LL_RCC_PLLM_DIV_16, 336, LL_RCC_PLLP_DIV_4);
+  LL_RCC_PLL_Enable();
 
-  /* USER CODE END USART2_Init 2 */
+   /* Wait till PLL is ready */
+  while(LL_RCC_PLL_IsReady() != 1)
+  {
 
+  }
+  LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
+  LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
+  LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_1);
+  LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL);
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
+
+   /* Wait till System clock is ready */
+  while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL)
+  {
+
+  }
+  LL_Init1msTick(84000000);
+  LL_SetSystemCoreClock(84000000);
+  LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
 }
 
 /**
@@ -222,7 +251,10 @@ static void MX_USART2_UART_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+<<<<<<< HEAD
   LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
+=======
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
@@ -232,6 +264,7 @@ static void MX_GPIO_Init(void)
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
 
   /**/
+<<<<<<< HEAD
   LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 
   /**/
@@ -252,11 +285,36 @@ static void MX_GPIO_Init(void)
 
   /**/
   GPIO_InitStruct.Pin = LD2_Pin;
+=======
+  LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_5);
+
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_13;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = USART_TX_Pin|USART_RX_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_5;
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+<<<<<<< HEAD
   LL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+=======
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+>>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 
 }
 
