@@ -97,14 +97,9 @@ int main(void)
 
   //LL_GPIO_WriteReg(GPIOC, MODER, LL_GPIO_ReadReg(GPIOC, MODER) & ~0x3000000); // forces '00' on [26:25] (six '0' -> 6*4=24, 7th digit selects [26:25])
   // GPIOA_5  - led
-<<<<<<< HEAD
-  LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x400); // forces 1 on [11]
-  LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x800); // forces 0 on [12]
-=======
  // LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x400); // forces 1 on [11]
  // LL_GPIO_WriteReg(GPIOA, MODER, LL_GPIO_ReadReg(GPIOA, MODER) & ~0x800); // forces 0 on [12]
 
->>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 
   /* USER CODE END 2 */
 
@@ -112,12 +107,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-<<<<<<< HEAD
 	  int isPressed = LL_GPIO_ReadReg(GPIOC, IDR) & 0x2000; // select the 13th bit (the pushbutton
 	  if(isPressed){
-=======
-	  if(LL_GPIO_ReadReg(GPIOC, IDR) & 0x1000){ // select the 13th bit (the pushbutton
->>>>>>> cb137867738bf9c4969459da42e6642ebe17d11c
 		  LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) | 0x10); // forces 1 on the 5th bit
 	  } else {
 		  LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) & ~0x10); // forces 0 on the 5th bit
