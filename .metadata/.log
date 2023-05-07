@@ -728,3 +728,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-07 12:04:47.810
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2023-05-07 13:14:00.551
+!MESSAGE Performing Marketplace install request from https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3274405
