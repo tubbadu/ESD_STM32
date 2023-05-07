@@ -90,7 +90,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // GPIOC_13 - pushbutton
-  LL_GPIO_WriteReg(GPIOC, GPIOC_MODER, LL_GPIO_ReadReg(GPIOC, GPIO_MODER) & ~0x3000000); // forces 0 on [25:26] (six '0' -> 6*4=24, 7th digit selects [25:26])
+  LL_GPIO_WriteReg(GPIOC, GPIOC_MODER, LL_GPIO_ReadReg(GPIOC, GPIO_IDR));
   // GPIOA_5  - led
   LL_GPIO_WriteReg(GPIOA, GPIOA_MODER, 0b01);
 
