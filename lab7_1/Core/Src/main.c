@@ -30,7 +30,7 @@ int main(void)
 
 	//CONFIGURE PORT: set MODER[11:10] = 0x1
 	*GPIOA_MODER = *GPIOA_MODER | 0x400;
-	*GPIOC_MODER = *GPIOC_MODER | 0x00; // redundant, as the button's default state is input
+	//*GPIOC_MODER = *GPIOC_MODER | 0x00; // redundant, as the button's default state is input
 	//SWITCH ON THE LED: set ODR[5] = 0x1, that is pulls PA5 high
 	//*GPIOA_ODR = *GPIOA_ODR | 0x20;
 	// Application code (Infinite loop)

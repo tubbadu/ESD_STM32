@@ -1,4 +1,6 @@
 core_cm4.h:1657:22:__NVIC_SetPriorityGrouping	24	static
+core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+core_cm4.h:2022:26:SysTick_Config	16	static
 stm32f4xx_ll_rcc.h:2989:22:LL_RCC_HSI_Enable	4	static
 stm32f4xx_ll_rcc.h:3009:26:LL_RCC_HSI_IsReady	4	static
 stm32f4xx_ll_rcc.h:3035:22:LL_RCC_HSI_SetCalibTrimming	16	static

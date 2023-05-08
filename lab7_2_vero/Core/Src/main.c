@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stm32f4xx_it.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +99,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   unsigned int MYWAIT = 3041;
-  //SysTick_Config(SystemCoreClock / 1000);
+  SysTick_Config(SystemCoreClock / 1000);
   while (1)
   {
     /* USER CODE END WHILE */
