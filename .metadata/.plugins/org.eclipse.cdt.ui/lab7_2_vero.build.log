@@ -1,0 +1,10 @@
+10:23:55 **** Incremental Build of configuration Debug for project lab7_2_vero ****
+make -j8 all 
+arm-none-eabi-size   lab7_2_vero.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6784	     16	   1568	   8368	   20b0	lab7_2_vero.elf
+Finished building: default.size.stdout
+ 
+
+10:23:55 Build Finished. 0 errors, 0 warnings. (took 400ms)
+
