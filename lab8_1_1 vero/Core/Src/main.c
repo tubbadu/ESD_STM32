@@ -109,7 +109,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if (LL_TIM_ReadReg(TIM3, CNT) >= 0x41a0){
+	  if (LL_TIM_ReadReg(TIM3, CNT) >= 0x419f){   // (84 MHz/5 MHz) = 16800 - 1 = 16799 = 419f
 
 		  LL_TIM_WriteReg(TIM3, CNT, 0x0000);
 		  LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) ^ (1 << 10));  // PA10
