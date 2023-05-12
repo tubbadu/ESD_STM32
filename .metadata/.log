@@ -4676,3 +4676,24 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.core.jobs 2 2 2023-05-12 14:17:35.477
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.core.DebugPlugin$EventDispatchJob
+!SESSION 2023-05-12 14:36:35.202 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-12 14:36:38.881
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-12 14:36:38.935
+!MESSAGE Log4j initialized with config file /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-12 14:36:43.585
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-05-12 14:37:09.842
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/AObuchow/Eclipse-Spectrum-Theme/updatesite/updatesite/content.xml.xz
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-05-12 14:37:10.053
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/AObuchow/Eclipse-Spectrum-Theme/updatesite/updatesite/content.jar
