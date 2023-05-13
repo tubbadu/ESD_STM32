@@ -183,8 +183,8 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-	int x = (rand()%10 + 50)*5;
-	for(int i=0;i<x;i++);
+	//int x = (rand()%10 + 50)*5;
+	//for(int i=0;i<x;i++);
   /* USER CODE END SysTick_IRQn 0 */
 
   /* USER CODE BEGIN SysTick_IRQn 1 */
