@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define f5 0x20D0   // 5Khz - 1
+#define f5 0x20CF   // 5Khz - 1
 #define f25 f5 * 2 //0x419F +220 // 25KHz -1
 
 
