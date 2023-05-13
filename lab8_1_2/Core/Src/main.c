@@ -96,8 +96,8 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   LL_TIM_WriteReg(TIM3, CCR1, f5);
-  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x1);
-  LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);
+  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);   // delete OC flag
+  LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);  // counter enable
   //LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) & ~(1 << 7));
 
   /* USER CODE END 2 */
@@ -109,9 +109,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	if (LL_TIM_ReadReg(TIM3, SR) & 0x1){
-		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x1); // spegni la flag
-		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + f5); // setta la prossima soglia
+	if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
+		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);    // spegni la flag
+		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + f5);  // setta la prossima soglia
 		LL_GPIO_WriteReg(GPIOC, ODR, LL_GPIO_ReadReg(GPIOC, ODR) ^ (1 << 6)); // toggla il pin
 	}
   }
@@ -214,7 +214,6 @@ static void MX_TIM3_Init(void)
   LL_TIM_OC_DisableFast(TIM3, LL_TIM_CHANNEL_CH2);
   LL_TIM_SetTriggerOutput(TIM3, LL_TIM_TRGO_RESET);
   LL_TIM_DisableMasterSlaveMode(TIM3);
-  LL_TIM_OC_EnablePreload(TIM3, LL_TIM_CHANNEL_CH1);
   /* USER CODE BEGIN TIM3_Init 2 */
 
   /* USER CODE END TIM3_Init 2 */
