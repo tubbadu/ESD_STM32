@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  0001297a  00000000  00000000  00028eb0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00005598  00000000  00000000  0003b82a  2**0
+ 17 .debug_line   000053fa  00000000  00000000  0003b82a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00066153  00000000  00000000  00040dc2  2**0
+ 18 .debug_str    00066156  00000000  00000000  00040c24  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000a6f15  2**0
+ 19 .comment      00000053  00000000  00000000  000a6d7a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000026f8  00000000  00000000  000a6f68  2**2
+ 20 .debug_frame  000026f8  00000000  00000000  000a6dd0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -143,8 +143,8 @@ Disassembly of section .text:
  8000286:	bf08      	it	eq
  8000288:	2800      	cmpeq	r0, #0
  800028a:	bf1c      	itt	ne
- 800028c:	f04f 31ff 	movne.w	r1, #4294967295
- 8000290:	f04f 30ff 	movne.w	r0, #4294967295
+ 800028c:	f04f 31ff 	movne.w	r1, #4294967295	; 0xffffffff
+ 8000290:	f04f 30ff 	movne.w	r0, #4294967295	; 0xffffffff
  8000294:	f000 b96e 	b.w	8000574 <__aeabi_idiv0>
  8000298:	f1ad 0c08 	sub.w	ip, sp, #8
  800029c:	e96d ce04 	strd	ip, lr, [sp, #-16]!
@@ -182,7 +182,7 @@ Disassembly of section .text:
  80002f8:	4299      	cmp	r1, r3
  80002fa:	d909      	bls.n	8000310 <__udivmoddi4+0x60>
  80002fc:	18fb      	adds	r3, r7, r3
- 80002fe:	f106 30ff 	add.w	r0, r6, #4294967295
+ 80002fe:	f106 30ff 	add.w	r0, r6, #4294967295	; 0xffffffff
  8000302:	f080 8119 	bcs.w	8000538 <__udivmoddi4+0x288>
  8000306:	4299      	cmp	r1, r3
  8000308:	f240 8116 	bls.w	8000538 <__udivmoddi4+0x288>
@@ -197,7 +197,7 @@ Disassembly of section .text:
  8000324:	45a6      	cmp	lr, r4
  8000326:	d909      	bls.n	800033c <__udivmoddi4+0x8c>
  8000328:	193c      	adds	r4, r7, r4
- 800032a:	f100 33ff 	add.w	r3, r0, #4294967295
+ 800032a:	f100 33ff 	add.w	r3, r0, #4294967295	; 0xffffffff
  800032e:	f080 8105 	bcs.w	800053c <__udivmoddi4+0x28c>
  8000332:	45a6      	cmp	lr, r4
  8000334:	f240 8102 	bls.w	800053c <__udivmoddi4+0x28c>
@@ -229,7 +229,7 @@ Disassembly of section .text:
  8000380:	428b      	cmp	r3, r1
  8000382:	d907      	bls.n	8000394 <__udivmoddi4+0xe4>
  8000384:	1879      	adds	r1, r7, r1
- 8000386:	f10c 30ff 	add.w	r0, ip, #4294967295
+ 8000386:	f10c 30ff 	add.w	r0, ip, #4294967295	; 0xffffffff
  800038a:	d202      	bcs.n	8000392 <__udivmoddi4+0xe2>
  800038c:	428b      	cmp	r3, r1
  800038e:	f200 80e9 	bhi.w	8000564 <__udivmoddi4+0x2b4>
@@ -243,7 +243,7 @@ Disassembly of section .text:
  80003a8:	45a0      	cmp	r8, r4
  80003aa:	d907      	bls.n	80003bc <__udivmoddi4+0x10c>
  80003ac:	193c      	adds	r4, r7, r4
- 80003ae:	f100 33ff 	add.w	r3, r0, #4294967295
+ 80003ae:	f100 33ff 	add.w	r3, r0, #4294967295	; 0xffffffff
  80003b2:	d202      	bcs.n	80003ba <__udivmoddi4+0x10a>
  80003b4:	45a0      	cmp	r8, r4
  80003b6:	f200 80d9 	bhi.w	800056c <__udivmoddi4+0x2bc>
@@ -292,7 +292,7 @@ Disassembly of section .text:
  8000432:	fa04 f402 	lsl.w	r4, r4, r2
  8000436:	d909      	bls.n	800044c <__udivmoddi4+0x19c>
  8000438:	18fb      	adds	r3, r7, r3
- 800043a:	f106 3cff 	add.w	ip, r6, #4294967295
+ 800043a:	f106 3cff 	add.w	ip, r6, #4294967295	; 0xffffffff
  800043e:	f080 808d 	bcs.w	800055c <__udivmoddi4+0x2ac>
  8000442:	4299      	cmp	r1, r3
  8000444:	f240 808a 	bls.w	800055c <__udivmoddi4+0x2ac>
@@ -307,7 +307,7 @@ Disassembly of section .text:
  8000460:	428b      	cmp	r3, r1
  8000462:	d907      	bls.n	8000474 <__udivmoddi4+0x1c4>
  8000464:	1879      	adds	r1, r7, r1
- 8000466:	f100 3cff 	add.w	ip, r0, #4294967295
+ 8000466:	f100 3cff 	add.w	ip, r0, #4294967295	; 0xffffffff
  800046a:	d273      	bcs.n	8000554 <__udivmoddi4+0x2a4>
  800046c:	428b      	cmp	r3, r1
  800046e:	d971      	bls.n	8000554 <__udivmoddi4+0x2a4>
@@ -336,7 +336,7 @@ Disassembly of section .text:
  80004b8:	fa00 f306 	lsl.w	r3, r0, r6
  80004bc:	d908      	bls.n	80004d0 <__udivmoddi4+0x220>
  80004be:	1861      	adds	r1, r4, r1
- 80004c0:	f109 30ff 	add.w	r0, r9, #4294967295
+ 80004c0:	f109 30ff 	add.w	r0, r9, #4294967295	; 0xffffffff
  80004c4:	d248      	bcs.n	8000558 <__udivmoddi4+0x2a8>
  80004c6:	458a      	cmp	sl, r1
  80004c8:	d946      	bls.n	8000558 <__udivmoddi4+0x2a8>
@@ -351,7 +351,7 @@ Disassembly of section .text:
  80004e6:	45b8      	cmp	r8, r7
  80004e8:	d907      	bls.n	80004fa <__udivmoddi4+0x24a>
  80004ea:	19e7      	adds	r7, r4, r7
- 80004ec:	f100 31ff 	add.w	r1, r0, #4294967295
+ 80004ec:	f100 31ff 	add.w	r1, r0, #4294967295	; 0xffffffff
  80004f0:	d22e      	bcs.n	8000550 <__udivmoddi4+0x2a0>
  80004f2:	45b8      	cmp	r8, r7
  80004f4:	d92c      	bls.n	8000550 <__udivmoddi4+0x2a0>
@@ -1486,7 +1486,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
+	  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
  8000bb2:	4b13      	ldr	r3, [pc, #76]	; (8000c00 <main+0xb8>)
  8000bb4:	691b      	ldr	r3, [r3, #16]
  8000bb6:	f003 0302 	and.w	r3, r3, #2
@@ -1525,7 +1525,7 @@ int main(void)
  8000bf6:	f503 4383 	add.w	r3, r3, #16768	; 0x4180
  8000bfa:	3320      	adds	r3, #32
  8000bfc:	6393      	str	r3, [r2, #56]	; 0x38
-  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
+	  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
  8000bfe:	e7d8      	b.n	8000bb2 <main+0x6a>
  8000c00:	40000400 	.word	0x40000400
 
@@ -1699,8 +1699,8 @@ static void MX_TIM3_Init(void)
   TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_TOGGLE;
  8000cfe:	2330      	movs	r3, #48	; 0x30
  8000d00:	61fb      	str	r3, [r7, #28]
-  TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_DISABLE;
- 8000d02:	2300      	movs	r3, #0
+  TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_ENABLE;
+ 8000d02:	2301      	movs	r3, #1
  8000d04:	623b      	str	r3, [r7, #32]
   TIM_OC_InitStruct.OCNState = LL_TIM_OCSTATE_DISABLE;
  8000d06:	2300      	movs	r3, #0
@@ -2236,7 +2236,7 @@ int _kill(int pid, int sig)
  8000f8c:	2216      	movs	r2, #22
  8000f8e:	601a      	str	r2, [r3, #0]
 	return -1;
- 8000f90:	f04f 33ff 	mov.w	r3, #4294967295
+ 8000f90:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
 }
  8000f94:	4618      	mov	r0, r3
  8000f96:	3708      	adds	r7, #8
@@ -2252,7 +2252,7 @@ void _exit (int status)
  8000fa0:	af00      	add	r7, sp, #0
  8000fa2:	6078      	str	r0, [r7, #4]
 	_kill(status, -1);
- 8000fa4:	f04f 31ff 	mov.w	r1, #4294967295
+ 8000fa4:	f04f 31ff 	mov.w	r1, #4294967295	; 0xffffffff
  8000fa8:	6878      	ldr	r0, [r7, #4]
  8000faa:	f7ff ffe7 	bl	8000f7c <_kill>
 	while (1) {}		/* Make sure we hang here */
@@ -2352,7 +2352,7 @@ int _close(int file)
  8001026:	af00      	add	r7, sp, #0
  8001028:	6078      	str	r0, [r7, #4]
 	return -1;
- 800102a:	f04f 33ff 	mov.w	r3, #4294967295
+ 800102a:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
 }
  800102e:	4618      	mov	r0, r3
  8001030:	370c      	adds	r7, #12
@@ -2473,7 +2473,7 @@ void *_sbrk(ptrdiff_t incr)
  80010c2:	220c      	movs	r2, #12
  80010c4:	601a      	str	r2, [r3, #0]
     return (void *)-1;
- 80010c6:	f04f 33ff 	mov.w	r3, #4294967295
+ 80010c6:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
  80010ca:	e009      	b.n	80010e0 <_sbrk+0x54>
   }
 
@@ -5964,7 +5964,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  800268a:	6e6b      	ldr	r3, [r5, #100]	; 0x64
  800268c:	07dc      	lsls	r4, r3, #31
  800268e:	d50e      	bpl.n	80026ae <_vfiprintf_r+0x6a>
- 8002690:	f04f 30ff 	mov.w	r0, #4294967295
+ 8002690:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  8002694:	b01d      	add	sp, #116	; 0x74
  8002696:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  800269a:	4b7b      	ldr	r3, [pc, #492]	; (8002888 <_vfiprintf_r+0x244>)
@@ -6014,7 +6014,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002708:	2b00      	cmp	r3, #0
  800270a:	f000 80a2 	beq.w	8002852 <_vfiprintf_r+0x20e>
  800270e:	2300      	movs	r3, #0
- 8002710:	f04f 32ff 	mov.w	r2, #4294967295
+ 8002710:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
  8002714:	e9cd 2305 	strd	r2, r3, [sp, #20]
  8002718:	f10a 0a01 	add.w	sl, sl, #1
  800271c:	9304      	str	r3, [sp, #16]
@@ -6081,7 +6081,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  80027ac:	9203      	str	r2, [sp, #12]
  80027ae:	2b00      	cmp	r3, #0
  80027b0:	bfb8      	it	lt
- 80027b2:	f04f 33ff 	movlt.w	r3, #4294967295
+ 80027b2:	f04f 33ff 	movlt.w	r3, #4294967295	; 0xffffffff
  80027b6:	3402      	adds	r4, #2
  80027b8:	9305      	str	r3, [sp, #20]
  80027ba:	f8df a0e4 	ldr.w	sl, [pc, #228]	; 80028a0 <_vfiprintf_r+0x25c>
@@ -6252,7 +6252,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002942:	47c0      	blx	r8
  8002944:	3001      	adds	r0, #1
  8002946:	d103      	bne.n	8002950 <_printf_common+0xac>
- 8002948:	f04f 30ff 	mov.w	r0, #4294967295
+ 8002948:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  800294c:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
  8002950:	3501      	adds	r5, #1
  8002952:	e7c6      	b.n	80028e2 <_printf_common+0x3e>
@@ -6400,7 +6400,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002ac0:	bfde      	ittt	le
  8002ac2:	2330      	movle	r3, #48	; 0x30
  8002ac4:	f806 3c01 	strble.w	r3, [r6, #-1]
- 8002ac8:	f106 36ff 	addle.w	r6, r6, #4294967295
+ 8002ac8:	f106 36ff 	addle.w	r6, r6, #4294967295	; 0xffffffff
  8002acc:	1b92      	subs	r2, r2, r6
  8002ace:	6122      	str	r2, [r4, #16]
  8002ad0:	f8cd a000 	str.w	sl, [sp]
@@ -6411,7 +6411,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002adc:	f7ff fee2 	bl	80028a4 <_printf_common>
  8002ae0:	3001      	adds	r0, #1
  8002ae2:	d14c      	bne.n	8002b7e <_printf_i+0x1fe>
- 8002ae4:	f04f 30ff 	mov.w	r0, #4294967295
+ 8002ae4:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  8002ae8:	b004      	add	sp, #16
  8002aea:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
  8002aee:	4835      	ldr	r0, [pc, #212]	; (8002bc4 <_printf_i+0x244>)
@@ -6600,7 +6600,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002c74:	f000 f80c 	bl	8002c90 <__swsetup_r>
  8002c78:	2800      	cmp	r0, #0
  8002c7a:	d0cb      	beq.n	8002c14 <__swbuf_r+0x28>
- 8002c7c:	f04f 37ff 	mov.w	r7, #4294967295
+ 8002c7c:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
  8002c80:	e7ea      	b.n	8002c58 <__swbuf_r+0x6c>
  8002c82:	bf00      	nop
  8002c84:	080034fc 	.word	0x080034fc
@@ -6632,7 +6632,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002cbe:	6033      	str	r3, [r6, #0]
  8002cc0:	f042 0340 	orr.w	r3, r2, #64	; 0x40
  8002cc4:	81a3      	strh	r3, [r4, #12]
- 8002cc6:	f04f 30ff 	mov.w	r0, #4294967295
+ 8002cc6:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  8002cca:	e03e      	b.n	8002d4a <__swsetup_r+0xba>
  8002ccc:	4b25      	ldr	r3, [pc, #148]	; (8002d64 <__swsetup_r+0xd4>)
  8002cce:	429c      	cmp	r4, r3
@@ -6825,7 +6825,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  8002e6c:	89a3      	ldrh	r3, [r4, #12]
  8002e6e:	f043 0340 	orr.w	r3, r3, #64	; 0x40
  8002e72:	81a3      	strh	r3, [r4, #12]
- 8002e74:	f04f 30ff 	mov.w	r0, #4294967295
+ 8002e74:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  8002e78:	e78e      	b.n	8002d98 <__sflush_r+0x1c>
  8002e7a:	4407      	add	r7, r0
  8002e7c:	eba8 0800 	sub.w	r8, r8, r0
@@ -7211,7 +7211,7 @@ void LL_SetSystemCoreClock(uint32_t HCLKFrequency)
  80031d8:	d904      	bls.n	80031e4 <_raise_r+0x14>
  80031da:	2316      	movs	r3, #22
  80031dc:	6003      	str	r3, [r0, #0]
- 80031de:	f04f 30ff 	mov.w	r0, #4294967295
+ 80031de:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
  80031e2:	bd38      	pop	{r3, r4, r5, pc}
  80031e4:	6c42      	ldr	r2, [r0, #68]	; 0x44
  80031e6:	b112      	cbz	r2, 80031ee <_raise_r+0x1e>

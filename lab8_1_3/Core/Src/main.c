@@ -113,7 +113,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
+	  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
 		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2); // turn off flag channel 1
 		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + f5); // set next threshold
 	  }
@@ -198,7 +198,7 @@ static void MX_TIM3_Init(void)
   LL_TIM_DisableARRPreload(TIM3);
   LL_TIM_SetClockSource(TIM3, LL_TIM_CLOCKSOURCE_INTERNAL);
   TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_TOGGLE;
-  TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_DISABLE;
+  TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_ENABLE;
   TIM_OC_InitStruct.OCNState = LL_TIM_OCSTATE_DISABLE;
   TIM_OC_InitStruct.CompareValue = 0;
   TIM_OC_InitStruct.OCPolarity = LL_TIM_OCPOLARITY_HIGH;
