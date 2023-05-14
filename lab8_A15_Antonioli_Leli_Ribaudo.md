@@ -1105,7 +1105,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 #define fmax 4500	// Hz
 #define fmin 800	// Hz
 #define fclk 84e6	// Hz
-#define potmax 65
+#define potmax 255
 
 
 /* USER CODE END PD */
