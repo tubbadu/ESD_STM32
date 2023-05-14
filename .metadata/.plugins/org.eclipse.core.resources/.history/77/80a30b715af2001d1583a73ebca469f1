@@ -102,8 +102,6 @@ int main(void)
   LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x4);   // delete OC flag channel 2
   LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);  // counter enable channel 1
   LL_TIM_WriteReg(TIM3, CR2, LL_TIM_ReadReg(TIM3, CR2) | 0x1);  // counter enable channel 2
-
-  // SysTick_Config(SystemCoreClock / 1000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
