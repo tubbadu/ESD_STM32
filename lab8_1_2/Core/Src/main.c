@@ -97,13 +97,12 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  LL_TIM_WriteReg(TIM3, CCR1, f5);
-  LL_TIM_WriteReg(TIM3, CCR2, f25);
-  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);   // delete OC flag
-  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x1);   // delete OC flag
+  LL_TIM_WriteReg(TIM3, CCR1, f5);                              // threshold 1
+  LL_TIM_WriteReg(TIM3, CCR2, f25);                             // threshold 2
+  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);   // delete OC flag channel 1
+  LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x4);   // delete OC flag channel 2
   LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);  // counter enable channel 1
   LL_TIM_WriteReg(TIM3, CR2, LL_TIM_ReadReg(TIM3, CR2) | 0x1);  // counter enable channel 2
-  //LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) & ~(1 << 7));
 
   /* USER CODE END 2 */
 
