@@ -125,7 +125,7 @@ int main(void)
 		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2); // turn off flag channel 1
 		if(LL_ADC_ReadReg(ADC1, SR) & (1 << 1)){ // read EOC bit: if ADC finishes conversion
 			LL_ADC_WriteReg(ADC1, SR, LL_ADC_ReadReg(ADC1, SR) & ~(1 << 1)); // reset EOC bit
-			int pot = LL_ADC_ReadReg(ADC1, DR) & 0xFFFF; // read pot current value
+			int pot = LL_ADC_ReadReg(ADC1, DR); // read pot current value
 			float f = fmin + (pot/((float)potmax))*(fmax-fmin);
 			int val = fclk / (2*f);
 			// for 200K pot:

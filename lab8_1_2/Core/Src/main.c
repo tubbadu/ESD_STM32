@@ -21,10 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define f5 0x20D0   // 5Khz - 1
-#define f25 f5 * 2 //0x419F +220 // 25KHz -1
-
-
+#define fclk 84e6	//84 MHz
+#define V2p5 (fclk / (2*2.5e3))
+#define V12p5 (fclk / (2*12.5e3))
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,8 +96,8 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  LL_TIM_WriteReg(TIM3, CCR1, f5);                              // threshold 1
-  LL_TIM_WriteReg(TIM3, CCR2, f25);                             // threshold 2
+  LL_TIM_WriteReg(TIM3, CCR1, V12p5);                              // threshold 1
+  LL_TIM_WriteReg(TIM3, CCR2, V2p5);                             // threshold 2
   LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);   // delete OC flag channel 1
   LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x4);   // delete OC flag channel 2
   LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);  // counter enable channel 1
@@ -116,12 +115,12 @@ int main(void)
 
 	  if (LL_TIM_ReadReg(TIM3, SR) & 0x2){
 		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2); // turn off flag channel 1
-		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + f5); // set next threshold
+		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + V12p5); // set next threshold
 		LL_GPIO_WriteReg(GPIOA, ODR, LL_GPIO_ReadReg(GPIOA, ODR) ^ (1 << 10)); // toggle pin
 	  }
 	  if (LL_TIM_ReadReg(TIM3, SR) & 0x4){
 		LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x4); // turn off flag channel 2
-		LL_TIM_WriteReg(TIM3, CCR2, LL_TIM_ReadReg(TIM3, CCR2) + f25); // set next threshold
+		LL_TIM_WriteReg(TIM3, CCR2, LL_TIM_ReadReg(TIM3, CCR2) + V2p5); // set next threshold
 		LL_GPIO_WriteReg(GPIOB, ODR, LL_GPIO_ReadReg(GPIOB, ODR) ^ (1 << 10)); // toggle pin
 	  }
   }
