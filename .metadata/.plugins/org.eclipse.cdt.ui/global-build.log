@@ -408,3 +408,226 @@ Finished building: lab9_1.bin
  
 Finished building: lab9_1.list
  
+18:56:18 **** Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12076	     16	   1568	  13660	   355c	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+18:58:06 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:9: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '8400' to '208' [-Woverflow]
+  130 |   val = 0x20D0;
+      |         ^~~~~~
+../Core/Src/main.c:128:9: warning: unused variable 'f' [-Wunused-variable]
+  128 |   float f = fmin + (pot/((float)potmax))*(fmax-fmin);
+      |         ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10008	     16	   1568	  11592	   2d48	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+18:58:39 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:9: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '8400' to '208' [-Woverflow]
+  130 |   val = 0x20D0;
+      |         ^~~~~~
+../Core/Src/main.c:128:9: warning: unused variable 'f' [-Wunused-variable]
+  128 |   float f = fmin + (pot/((float)potmax))*(fmax-fmin);
+      |         ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10008	     12	   1572	  11592	   2d48	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+18:58:56 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:9: warning: unused variable 'f' [-Wunused-variable]
+  128 |   float f = fmin + (pot/((float)potmax))*(fmax-fmin);
+      |         ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9996	     12	   1572	  11580	   2d3c	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+18:59:25 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/stm32f4xx_it.c: In function 'TIM3_IRQHandler':
+../Core/Src/stm32f4xx_it.c:207:10: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+  207 |  uint8_t a;
+      |          ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9980	     12	   1572	  11564	   2d2c	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+19:01:01 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/stm32f4xx_it.c: In function 'TIM3_IRQHandler':
+../Core/Src/stm32f4xx_it.c:207:10: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+  207 |  uint8_t a;
+      |          ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:9: warning: unused variable 'f' [-Wunused-variable]
+  128 |   float f = fmin + (pot/((float)potmax))*(fmax-fmin);
+      |         ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10004	     12	   1572	  11588	   2d44	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+19:01:16 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/stm32f4xx_it.c: In function 'TIM3_IRQHandler':
+../Core/Src/stm32f4xx_it.c:207:10: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+  207 |  uint8_t a;
+      |          ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10008	     12	   1572	  11592	   2d48	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+19:01:34 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:9: warning: unused variable 'f' [-Wunused-variable]
+  128 |   float f = fmin + (pot/((float)potmax))*(fmax-fmin);
+      |         ^
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10008	     12	   1572	  11592	   2d48	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+19:01:55 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12084	     12	   1572	  13668	   3564	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
+19:08:31 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-size   lab9_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12084	     12	   1572	  13668	   3564	lab9_1.elf
+Finished building: default.size.stdout
+ 
+19:08:56 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-size   lab9_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12084	     12	   1572	  13668	   3564	lab9_1.elf
+Finished building: default.size.stdout
+ 
+19:09:39 **** Incremental Build of configuration Debug for project lab9_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401xE -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab9_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab9_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab9_1.elf
+ 
+arm-none-eabi-size   lab9_1.elf 
+arm-none-eabi-objdump -h -S  lab9_1.elf  > "lab9_1.list"
+arm-none-eabi-objcopy  -O binary  lab9_1.elf  "lab9_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12092	     12	   1572	  13676	   356c	lab9_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab9_1.bin
+ 
+Finished building: lab9_1.list
+ 
