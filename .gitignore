@@ -4,8 +4,8 @@
 !LAB[0-9]/*
 !LAB1[0-9]/*
 
-!**/Core/Src/*.c
-!**/Core/Src/*.h
+!**/*.c
+!**/Core/Src/*
 
 !**/*.ioc
 !.gitignore
