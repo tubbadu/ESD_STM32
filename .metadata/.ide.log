@@ -2256,3 +2256,196 @@
 2023-05-15 11:55:03,787 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 1519mS.
 2023-05-15 11:55:03,788 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
 2023-05-15 11:55:03,789 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 11:59:19,009 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:19,073 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:19,145 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:19,221 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:32,301 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,766 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:41,793 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,795 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,795 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,795 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,796 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,797 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:41,812 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,821 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:48,853 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,854 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,854 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,855 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,856 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:48,885 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,708 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 11:59:55,735 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,737 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,738 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 11:59:55,752 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-15 12:00:19,868 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,511x340,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 12:00:23,618 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 12:00:39,305 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 798588616 Bytes (1003487232)
+2023-05-15 12:00:39,435 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 811171528 Bytes (1003487232)
+2023-05-15 12:00:39,927 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 838298496 Bytes (1003487232)
+2023-05-15 12:00:40,088 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: ADC
+2023-05-15 12:00:40,089 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-05-15 12:00:40,090 [INFO] CodeGenerator:663 - code generatio: config db path: /opt/st/stm32cubeide_1.8.0/plugins/com.st.stm32cube.common.mx_6.4.0.202111222105//db/
+2023-05-15 12:00:40,226 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp_save
+2023-05-15 12:00:40,257 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp
+2023-05-15 12:00:40,269 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp_save
+2023-05-15 12:00:40,328 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp
+2023-05-15 12:00:40,482 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c_save
+2023-05-15 12:00:40,544 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c
+2023-05-15 12:00:40,546 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h_save
+2023-05-15 12:00:40,587 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h
+2023-05-15 12:00:40,589 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_hal_msp.c_save
+2023-05-15 12:00:40,644 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_hal_msp.c
+2023-05-15 12:00:40,645 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp_save
+2023-05-15 12:00:40,677 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp
+2023-05-15 12:00:40,678 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-05-15 12:00:40,718 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_hal_conf.h
+2023-05-15 12:00:40,735 [WARN] IPConfigManager:3151 - IP not found : TIM
+2023-05-15 12:00:40,736 [WARN] CodeGenerator:3358 - IP not found : null
+2023-05-15 12:00:40,738 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h_save
+2023-05-15 12:00:40,779 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h
+2023-05-15 12:00:40,780 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c_save
+2023-05-15 12:00:40,943 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c
+2023-05-15 12:00:41,348 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 21mS.
+2023-05-15 12:00:41,349 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2023-05-15 12:00:41,566 [INFO] ConfigFileManager:1273 - The Die is : DIE433
+2023-05-15 12:00:42,499 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 1150mS.
+2023-05-15 12:00:42,499 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 12:00:42,500 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 12:01:47,687 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-05-15 12:01:52,564 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,27,957x564,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 12:01:54,743 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-05-15 12:07:37,947 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-05-15 12:07:37,975 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 12:07:38,021 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-05-15 12:07:38,050 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-15 12:07:39,297 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 260157968 Bytes (1003487232)
+2023-05-15 12:07:39,417 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 272596016 Bytes (1003487232)
+2023-05-15 12:07:39,860 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 298825112 Bytes (1003487232)
+2023-05-15 12:07:40,042 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: ADC
+2023-05-15 12:07:40,043 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-05-15 12:07:40,043 [INFO] CodeGenerator:663 - code generatio: config db path: /opt/st/stm32cubeide_1.8.0/plugins/com.st.stm32cube.common.mx_6.4.0.202111222105//db/
+2023-05-15 12:07:40,184 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp_save
+2023-05-15 12:07:40,213 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp
+2023-05-15 12:07:40,268 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp_save
+2023-05-15 12:07:40,300 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp
+2023-05-15 12:07:40,423 [WARN] IPConfigManager:3832 - WARNING: Missing Config File for SYS ip!!
+2023-05-15 12:07:40,822 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c_save
+2023-05-15 12:07:40,886 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c
+2023-05-15 12:07:40,887 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h_save
+2023-05-15 12:07:40,920 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h
+2023-05-15 12:07:40,922 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp_save
+2023-05-15 12:07:40,953 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp
+2023-05-15 12:07:40,954 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32_assert.h_save
+2023-05-15 12:07:40,984 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32_assert.h
+2023-05-15 12:07:40,990 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-05-15 12:07:40,990 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-05-15 12:07:40,990 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-05-15 12:07:40,995 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-05-15 12:07:40,995 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-05-15 12:07:40,995 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-05-15 12:07:40,995 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-05-15 12:07:40,995 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-05-15 12:07:41,002 [WARN] IPConfigManager:3151 - IP not found : TIM
+2023-05-15 12:07:41,002 [WARN] CodeGenerator:3358 - IP not found : null
+2023-05-15 12:07:41,004 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h_save
+2023-05-15 12:07:41,037 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h
+2023-05-15 12:07:41,038 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c_save
+2023-05-15 12:07:41,101 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c
+2023-05-15 12:07:41,378 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 21mS.
+2023-05-15 12:07:41,379 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2023-05-15 12:07:41,675 [INFO] ConfigFileManager:1273 - The Die is : DIE433
+2023-05-15 12:07:42,470 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 1091mS.
+2023-05-15 12:07:42,470 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 12:07:42,470 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 12:32:14,544 [INFO] Gpio:254 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-05-15 12:33:26,025 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 554507288 Bytes (1003487232)
+2023-05-15 12:33:26,138 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 567612440 Bytes (1003487232)
+2023-05-15 12:33:26,442 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 601693208 Bytes (1003487232)
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: ADC
+2023-05-15 12:33:26,626 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-05-15 12:33:26,626 [INFO] CodeGenerator:663 - code generatio: config db path: /opt/st/stm32cubeide_1.8.0/plugins/com.st.stm32cube.common.mx_6.4.0.202111222105//db/
+2023-05-15 12:33:26,830 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp_save
+2023-05-15 12:33:26,858 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/license.tmp
+2023-05-15 12:33:26,908 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp_save
+2023-05-15 12:33:26,937 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/gpio.tmp
+2023-05-15 12:33:27,009 [WARN] IPConfigManager:3832 - WARNING: Missing Config File for SYS ip!!
+2023-05-15 12:33:27,260 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c_save
+2023-05-15 12:33:27,300 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/stm32f4xx_it.c
+2023-05-15 12:33:27,301 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h_save
+2023-05-15 12:33:27,333 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32f4xx_it.h
+2023-05-15 12:33:27,335 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp_save
+2023-05-15 12:33:27,366 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/MXTmpFiles/system.tmp
+2023-05-15 12:33:27,366 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32_assert.h_save
+2023-05-15 12:33:27,397 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/stm32_assert.h
+2023-05-15 12:33:27,404 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-05-15 12:33:27,404 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-05-15 12:33:27,404 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-05-15 12:33:27,409 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-05-15 12:33:27,409 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-05-15 12:33:27,409 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-05-15 12:33:27,409 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-05-15 12:33:27,409 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-05-15 12:33:27,417 [WARN] IPConfigManager:3151 - IP not found : TIM
+2023-05-15 12:33:27,418 [WARN] CodeGenerator:3358 - IP not found : null
+2023-05-15 12:33:27,419 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h_save
+2023-05-15 12:33:27,463 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Inc/main.h
+2023-05-15 12:33:27,465 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c_save
+2023-05-15 12:33:27,556 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_1/Core/Src/main.c
+2023-05-15 12:33:27,853 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 17mS.
+2023-05-15 12:33:27,854 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2023-05-15 12:33:28,001 [INFO] ConfigFileManager:1273 - The Die is : DIE433
+2023-05-15 12:33:28,883 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 1029mS.
+2023-05-15 12:33:28,884 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2023-05-15 12:33:28,884 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-15 13:29:34,051 [INFO] Activator:177 - 
+
+
+2023-05-15 13:29:34,055 [INFO] Activator:178 - !SESSION log4j initialized
+2023-05-15 13:29:41,399 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
