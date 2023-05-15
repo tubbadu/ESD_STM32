@@ -2,12 +2,9 @@
 !LAB[0-9]
 !LAB1[0-9]
 
-!**/Core/Src/main.c
-!*/*/Core/Src/main.c
-!LAB8/lab8_1_4/Core/Src/main.c
-!**.ioc
-!.gitinclude
+!**/Core/Src/*
+!**/*.ioc
 !.gitignore
-!**.pdf
-!**.md
-!**.txt
+!**/*.pdf
+!**/*.md
+!**/*.txt
