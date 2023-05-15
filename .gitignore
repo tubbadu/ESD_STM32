@@ -1,5 +1,14 @@
 *
 
 
+!LAB[0-9]/*
+!LAB1[0-9]/*
 
-!LAB8/lab8_1_4/Core/Src/main.c
+!**/Core/Src/*.c
+!**/Core/Src/*.h
+
+!**/*.ioc
+!.gitignore
+!**/*.pdf
+!**/*.md
+!**/*.txt
