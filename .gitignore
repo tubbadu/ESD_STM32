@@ -1,6 +1,5 @@
-.git
-.metadata
-.directory
+.*
+!.gitignore
 **/*.ld
 **/*.launch
 **/Drivers/
