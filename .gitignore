@@ -1,9 +1,9 @@
 *
 
-!*/Core/Src/main.c
-!*.ioc
+!**/Core/Src/main.c
+!**.ioc
 !.gitinclude
 !.gitignore
-!*.pdf
-!*.md
-!*.txt
+!**.pdf
+!**.md
+!**.txt
