@@ -1,2 +1,9 @@
-*.o
-*.launch
+*
+
+!*/Core/Src/main.c
+!*.ioc
+!.gitinclude
+!.gitignore
+!*.pdf
+!*.md
+!*.txt
