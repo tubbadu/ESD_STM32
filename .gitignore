@@ -1,2 +1,8 @@
-*.o
-*.launch
+.*
+!.gitignore
+**/*.ld
+**/*.launch
+**/Drivers/
+**/Debug/
+**/Core/Inc/
+**/Core/Startup/
