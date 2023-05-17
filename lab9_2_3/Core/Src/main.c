@@ -52,7 +52,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
-#define CALCULATE_FREQUENCY(fmin, fmax, pot) (fmin + (pot/((float)potmax))*(fmax-fmin))
+#define CALCULATE_FREQUENCY(fmin, fmax, potx) (fmin + (pot/((float)potmax))*(fmax-fmin))
 
 /* USER CODE END PM */
 
@@ -154,11 +154,14 @@ int main(void)
 		LL_ADC_WriteReg(ADC1, SR, LL_ADC_ReadReg(ADC1, SR) & ~(1 << 1)); // reset EOC bit
 		uint8_t pot = (uint8_t)(LL_ADC_ReadReg(ADC1, DR) & 0xFFFF); // read pot current value
 		float f = CALCULATE_FREQUENCY(f1min, f1max, pot);
+		//float f1 = f;
 		val1 = fclk / (2*f);
-		f = CALCULATE_FREQUENCY(f2min, f2max, pot);
-		val2 = fclk / (2*f);
-		f = CALCULATE_FREQUENCY(f3min, f3max, pot);
-		val3 = fclk / (2*f);
+		//f = CALCULATE_FREQUENCY(f2min, f2max, pot);
+		//float f2 = f;
+		val2 = val1*2; //fclk / (2*f);
+		//f = CALCULATE_FREQUENCY(f3min, f3max, pot);
+		val3 = val1*4; //fclk / (2*f);
+		//float f3 = f;
 	  }
     /* USER CODE END WHILE */
 

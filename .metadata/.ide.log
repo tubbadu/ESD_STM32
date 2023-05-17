@@ -7013,3 +7013,66 @@
 2023-05-17 13:40:00,724 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
 2023-05-17 13:48:48,576 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,590x424,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
 2023-05-17 13:48:50,100 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-05-17 13:49:26,378 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 764387664 Bytes (1073741824)
+2023-05-17 13:49:26,445 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 776654024 Bytes (1073741824)
+2023-05-17 13:49:26,768 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 804495808 Bytes (1073741824)
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: ADC
+2023-05-17 13:49:26,938 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-05-17 13:49:26,939 [INFO] CodeGenerator:663 - code generatio: config db path: /opt/st/stm32cubeide_1.8.0/plugins/com.st.stm32cube.common.mx_6.4.0.202111222105//db/
+2023-05-17 13:49:27,148 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/license.tmp_save
+2023-05-17 13:49:27,197 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/license.tmp
+2023-05-17 13:49:27,278 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/gpio.tmp_save
+2023-05-17 13:49:27,311 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/gpio.tmp
+2023-05-17 13:49:27,688 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/stm32f4xx_it.c_save
+2023-05-17 13:49:27,754 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/stm32f4xx_it.c
+2023-05-17 13:49:27,756 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32f4xx_it.h_save
+2023-05-17 13:49:27,827 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32f4xx_it.h
+2023-05-17 13:49:27,830 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/stm32f4xx_hal_msp.c_save
+2023-05-17 13:49:27,886 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/stm32f4xx_hal_msp.c
+2023-05-17 13:49:27,886 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/system.tmp_save
+2023-05-17 13:49:27,916 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/MXTmpFiles/system.tmp
+2023-05-17 13:49:27,917 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32_assert.h_save
+2023-05-17 13:49:27,946 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32_assert.h
+2023-05-17 13:49:27,947 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-05-17 13:49:27,982 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/stm32f4xx_hal_conf.h
+2023-05-17 13:49:27,993 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-05-17 13:49:27,993 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-05-17 13:49:27,993 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-05-17 13:49:27,997 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-05-17 13:49:27,997 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-05-17 13:49:27,997 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-05-17 13:49:27,997 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-05-17 13:49:27,997 [WARN] IPConfigManager:2741 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-05-17 13:49:28,008 [WARN] IPConfigManager:3151 - IP not found : TIM
+2023-05-17 13:49:28,008 [WARN] CodeGenerator:3358 - IP not found : null
+2023-05-17 13:49:28,010 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/main.h_save
+2023-05-17 13:49:28,043 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Inc/main.h
+2023-05-17 13:49:28,044 [INFO] CodeEngine:239 - oldGeneratedFile, /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/main.c_save
+2023-05-17 13:49:28,106 [INFO] CodeEngine:257 - Generated code: /home/tubbadu/Nextcloud/Polito/ESD/ESD_STM32/lab9_2_3/Core/Src/main.c
+2023-05-17 13:49:28,497 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 45mS.
+2023-05-17 13:49:28,498 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2023-05-17 13:49:28,692 [INFO] ConfigFileManager:1273 - The Die is : DIE433
+2023-05-17 13:49:29,328 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 830mS.
+2023-05-17 13:49:29,329 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-17 13:49:29,329 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2023-05-17 13:50:34,892 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,893 [INFO] ADCParametersView:103 -                Rank 1 : false
+2023-05-17 13:50:34,910 [INFO] ADCParametersView:103 -                Rank 1 : false

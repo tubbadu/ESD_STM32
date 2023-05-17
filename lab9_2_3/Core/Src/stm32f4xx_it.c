@@ -55,7 +55,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern TIM_HandleTypeDef htim4;
 /* USER CODE BEGIN EV */
 
 extern int val1;
@@ -222,6 +222,18 @@ void TIM3_IRQHandler(void)
 		LL_TIM_WriteReg(TIM3, CCR3, LL_TIM_ReadReg(TIM3, CCR3) + val3);
 	}
 
+  /* USER CODE END TIM3_IRQn 0 */
+  /* USER CODE BEGIN TIM3_IRQn 1 */
+
+  /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM4 global interrupt.
+  */
+void TIM4_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM4_IRQn 0 */
 	if(LL_TIM_IsActiveFlag_CC2(TIM4)){
 		LL_TIM_ClearFlag_CC2(TIM4);
 		LL_TIM_WriteReg(TIM4, CCR2, LL_TIM_ReadReg(TIM4, CCR2) + val4);
@@ -229,10 +241,11 @@ void TIM3_IRQHandler(void)
 		LL_ADC_WriteReg(ADC1, CR2, LL_ADC_ReadReg(ADC1, CR2) | (1 << 30)); // set SWSTART to 1
 	}
 
-  /* USER CODE END TIM3_IRQn 0 */
-  /* USER CODE BEGIN TIM3_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim4);
+  /* USER CODE BEGIN TIM4_IRQn 1 */
 
-  /* USER CODE END TIM3_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 1 */
 }
 
 /**
