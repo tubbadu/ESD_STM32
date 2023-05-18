@@ -2,9 +2,10 @@
 .*
 .directory
 **/*.ld
-!.gitignore
 **/*.launch
 **/Drivers/
 **/Debug/
 **/Core/Inc/
 **/Core/Startup/
+
+!.gitignore
