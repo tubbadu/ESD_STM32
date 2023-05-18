@@ -1,4 +1,6 @@
-.*
+.metadata
+**/.*
+.directory
 !.gitignore
 **/*.ld
 **/*.launch
