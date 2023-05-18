@@ -1,8 +1,8 @@
 .metadata
-**/.*
+.*
 .directory
-!.gitignore
 **/*.ld
+!.gitignore
 **/*.launch
 **/Drivers/
 **/Debug/
