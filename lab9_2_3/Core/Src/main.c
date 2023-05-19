@@ -78,9 +78,8 @@ static void MX_ADC1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-int val1 = (fclk / (2*f1min));
-int val2 = (fclk / (2*f2min));
-int val3 = (fclk / (2*f3min));
+int val = (fclk / (2*f1min));
+int oldval;
 
 int val4 = (fclk / f4); // with no 2* because this is not a toggle
 
@@ -124,10 +123,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+    oldval = val;
 
-  	LL_TIM_WriteReg(TIM3, CCR1, val1);  // set initial threshold CH1
-    LL_TIM_WriteReg(TIM3, CCR2, val2);  // set initial threshold CH2
-    LL_TIM_WriteReg(TIM3, CCR3, val3);  // set initial threshold CH3
+  	LL_TIM_WriteReg(TIM3, CCR1, val);  // set initial threshold CH1
+    LL_TIM_WriteReg(TIM3, CCR2, val*2);  // set initial threshold CH2
+    LL_TIM_WriteReg(TIM3, CCR3, val*4);  // set initial threshold CH3
 
     LL_TIM_WriteReg(TIM4, CCR2, val4);  // set initial threshold TIM4 CH2
 
@@ -155,13 +155,16 @@ int main(void)
 		uint8_t pot = (uint8_t)(LL_ADC_ReadReg(ADC1, DR) & 0xFFFF); // read pot current value
 		float f = CALCULATE_FREQUENCY(f1min, f1max, pot);
 		//float f1 = f;
-		val1 = fclk / (2*f);
-		//f = CALCULATE_FREQUENCY(f2min, f2max, pot);
-		//float f2 = f;
-		val2 = val1*2; //fclk / (2*f);
-		//f = CALCULATE_FREQUENCY(f3min, f3max, pot);
+		val = fclk / (2*f);
+		/*
+		f = CALCULATE_FREQUENCY(f2min, f2max, pot);
+		float f2 = f;
+		//val2 = val1*2; //fclk / (2*f);
+		f = CALCULATE_FREQUENCY(f3min, f3max, pot);
 		val3 = val1*4; //fclk / (2*f);
 		//float f3 = f;
+	    int i = 1;
+	    */
 	  }
     /* USER CODE END WHILE */
 

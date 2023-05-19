@@ -58,10 +58,11 @@
 extern TIM_HandleTypeDef htim4;
 /* USER CODE BEGIN EV */
 
-extern int val1;
-extern int val2;
-extern int val3;
+extern int val;
+extern int oldval;
+
 extern int val4;
+
 
 /* USER CODE END EV */
 
@@ -209,18 +210,21 @@ void SysTick_Handler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-	if(LL_TIM_IsActiveFlag_CC1(TIM3)){
-		LL_TIM_ClearFlag_CC1(TIM3);
-		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + val1);
+	if(LL_TIM_IsActiveFlag_CC3(TIM3)){
+		LL_TIM_ClearFlag_CC3(TIM3);
+		oldval = val;
+		LL_TIM_WriteReg(TIM3, CCR3, LL_TIM_ReadReg(TIM3, CCR3) + oldval*4);
 	}
 	if(LL_TIM_IsActiveFlag_CC2(TIM3)){
 		LL_TIM_ClearFlag_CC2(TIM3);
-		LL_TIM_WriteReg(TIM3, CCR2, LL_TIM_ReadReg(TIM3, CCR2) + val2);
+		LL_TIM_WriteReg(TIM3, CCR2, LL_TIM_ReadReg(TIM3, CCR2) + oldval*2);
 	}
-	if(LL_TIM_IsActiveFlag_CC3(TIM3)){
-		LL_TIM_ClearFlag_CC3(TIM3);
-		LL_TIM_WriteReg(TIM3, CCR3, LL_TIM_ReadReg(TIM3, CCR3) + val3);
+	if(LL_TIM_IsActiveFlag_CC1(TIM3)){
+		LL_TIM_ClearFlag_CC1(TIM3);
+		LL_TIM_WriteReg(TIM3, CCR1, LL_TIM_ReadReg(TIM3, CCR1) + oldval);
 	}
+
+
 
   /* USER CODE END TIM3_IRQn 0 */
   /* USER CODE BEGIN TIM3_IRQn 1 */
