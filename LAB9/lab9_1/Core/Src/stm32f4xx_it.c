@@ -204,8 +204,6 @@ void SysTick_Handler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-	uint8_t a;
-	a = val;
 	if(LL_TIM_IsActiveFlag_CC1(TIM3)){
 		LL_TIM_ClearFlag_CC1(TIM3);
 

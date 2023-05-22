@@ -1,4 +1,4 @@
-# Lab 8 - squadra A15
+# Lab 9 - squadra A15
 
 Antonioli Gianfranco 268382  
 Leli Lorenzo 281728  
@@ -128,7 +128,6 @@ int main(void)
 	LL_TIM_WriteReg(TIM3, SR, LL_TIM_ReadReg(TIM3, SR) & ~0x2);   // delete OC flag channel 1
 	LL_TIM_WriteReg(TIM3, CR1, LL_TIM_ReadReg(TIM3, CR1) | 0x1);  // counter enable channel 1
 
-	//LL_TIM_WriteReg(TIM3, DIOR, LL_TIM_ReadReg(TIM3, DIOR) | 0x1); // enable interrupt // no, it just destroys everything
 	LL_TIM_WriteReg(TIM3, DIOR, LL_TIM_ReadReg(TIM3, DIOR) | 0x2); // enable ch1 of interrupt
 
   while (1)
@@ -640,8 +639,7 @@ void SysTick_Handler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-	uint8_t a;
-	a = val;
+
 	if(LL_TIM_IsActiveFlag_CC1(TIM3)){
 		LL_TIM_ClearFlag_CC1(TIM3);
 
@@ -1991,7 +1989,7 @@ void EXTI15_10_IRQHandler(void)
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define fclk (84e6/(2048+1)) // prescaler set to 2048 TODO why if I put 2047 it does not work as expected?
+#define fclk (84e6/(2047+1)) // prescaler set to 2048 TODO why if I put 2047 it does not work as expected?
 
 #define f1max (10.0e3)
 #define f1min (1.0e3)
@@ -2264,7 +2262,7 @@ static void MX_TIM3_Init(void)
   /* USER CODE BEGIN TIM3_Init 1 */
 
   /* USER CODE END TIM3_Init 1 */
-  TIM_InitStruct.Prescaler = 2048;
+  TIM_InitStruct.Prescaler = 2047;
   TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
   TIM_InitStruct.Autoreload = 65535;
   TIM_InitStruct.ClockDivision = LL_TIM_CLOCKDIVISION_DIV1;
@@ -2323,7 +2321,7 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 2048;
+  htim4.Init.Prescaler = 2047;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim4.Init.Period = 65535;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
