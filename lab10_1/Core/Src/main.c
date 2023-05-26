@@ -33,8 +33,6 @@
 /* USER CODE BEGIN PD */
 /* USER CODE END PD */
 
-#define fclk (84e6 / (99+1))
-
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
@@ -99,7 +97,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
   HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_1);
 
   while (1)
@@ -175,7 +172,7 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 99;
+  htim3.Init.Prescaler = 0;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 65535;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -281,6 +278,26 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+uint16_t capture, oldcapture, high;
+
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
+	if(htim == &htim3){
+
+		capture = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
+		uint16_t T;
+	    float duty;
+
+		if (HAL_GPIO_ReadPin (GPIOC, GPIO_PIN_6) == 1){
+			T = capture - oldcapture;
+			duty = (float)high/(float)T;
+
+			oldcapture = capture;
+		}else{
+			high = capture - oldcapture;
+		}
+
+	}
+}
 /* USER CODE END 4 */
 
 /**
