@@ -296,6 +296,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 			high = capture - oldcapture;
 		}
 
+
 	}
 }
 /* USER CODE END 4 */
